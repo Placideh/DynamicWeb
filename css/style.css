@@ -164,6 +164,12 @@ position:relative
     box-sizing:border-box;
     overflow: hidden;
   }
+  .my-list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left:10em;
+  }
 
   a{
     color:yellow;
@@ -176,12 +182,7 @@ position:relative
     background:#fff;
     border:1px solid #ccc;
   }
-  .headingTypography {
-    position:relative;
-    left:2rem;
-    font-size:12px;
 
-  }
   .ul-list {
     display:flex;
     justify-content:space-between;
@@ -191,7 +192,7 @@ position:relative
     top:0.3em;
   }
   .ul-list >li {
-    margin-right:1em;
+    margin-right:2em;
   }
   .showcase {
     margin-top:3.3em;
