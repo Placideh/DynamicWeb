@@ -6,9 +6,9 @@ function getUsers() {
       let output='<h2>Users</h2>';
       data.forEach((user)=>{
         output+=`
-        <div class='userlist'>
-          Name:${user.name}
-          Email:${user.email}
+        <div class='userlist' value='${user.id}'>
+          Name:${user.name}<br>
+          Email:${user.email}<br>
           <button value='${user.id}' class="userBtn">Get User's Post</button>
         </div>
           <br>
