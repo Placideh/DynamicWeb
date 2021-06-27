@@ -1,0 +1,288 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family:Arial,Helvetica,san-serif;
+  margin:0;
+  background-color:#f4f4f4;
+}
+#main-header {
+  background-color: #000;
+  color:#fff;
+  position: fixed;
+  display:flex;
+  top:0.06em;
+  height: 5.5em;
+  width:100%;
+  z-index:1;
+  box-sizing:border-box;
+}
+
+a{
+  color:yellow;
+  text-decoration:none;
+  padding:0.5em;
+  border-radius:5px;
+}
+a:hover{
+  color:blue;
+  background:#fff;
+  border:1px solid #ccc;
+}
+
+.my-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left:15em;
+}
+.ul-list {
+  display:flex;
+  justify-content:space-between;
+  list-style:none;
+  position:relative;
+  left:10em;
+  top:1.3em;
+  align-items: center;
+}
+.ul-list >li {
+  margin-right:2em;
+}
+
+
+.showcase {
+  margin-top:5.3em;
+  background-image:url(../images/park.jpg);
+  height:20em;
+  width:100%;
+  background-position:center center;
+  text-align:center;
+  color:#f4f4f4;
+  box-sizing:border-box;
+  position:relative;
+}
+.showcase >h1 {
+  position:relative;
+  top:1em;
+}
+.showcase >p {
+  position:relative;
+  top:4em;
+  font-size:135%;
+}
+
+.container {
+  width:80%;
+  margin:auto;
+  margin-bottom:5%;
+}
+.users {
+  background: #ddd;
+  /* display: flex; */
+  /* align-items: flex-start;  */
+}
+/* .userBtn{
+  background: #000;
+  color:#fff;
+  height: 1em;
+  position: relative;
+  font-size: 12px;
+
+} */
+.userBtn:hover{
+
+}
+
+.btnContainer {
+  width:20%;
+  height:10%;
+  display:inline-block;
+  border-radius: 5px;
+   color:#fff;
+   background: #000;
+   text-decoration: none;;
+   padding:1rem 2 rem;
+   border:1px #fff solid;
+   margin-top:40px;
+   font-size:20px;
+   animation-name:btn;
+   animation-duration: 3s;
+   animation-delay:3s;
+   animation-fill-mode: forwards;
+   transition-property: transform;
+   transition-duration: 1s;
+}
+.btnContainer:hover{
+    transform: rotateY(180deg);
+    background:#000;
+    color:#f4f3f3;
+    border-radius: 5px;
+
+}
+
+.main {
+  height:20em;
+  text-align:center;
+  position:relative;
+  top:10em;
+}
+#main-footer {
+background:#000;
+height:15em;
+display:grid:
+grid-template-columns:repeat(4,1fr);
+color:#fff;
+position:relative
+}
+#main-footer > h4 {
+  position:absolute;
+  top:2em;
+}
+#main-footer > p {
+  position:absolute;
+  top:10em;
+  left:40em;
+}
+.footerdiv {
+  position:absolute;
+  top:0px;
+  right:3em;
+}
+
+@media (max-width:960px) {
+  *{
+    box-sizing: border-box;
+  }
+  #main-header {
+    background-color: #000;
+    color:#fff;
+    position: fixed;
+    display:flex;
+    top:0.06em;
+    width:100%;
+    z-index:1;
+    box-sizing:border-box;
+    overflow: hidden;
+  }
+
+  a{
+    color:yellow;
+    text-decoration:none;
+    padding:0.2em;
+    border-radius:5px;
+  }
+  a:hover{
+    color:blue;
+    background:#fff;
+    border:1px solid #ccc;
+  }
+  .headingTypography {
+    position:relative;
+    left:2rem;
+    font-size:12px;
+
+  }
+  .ul-list {
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    position:relative;
+    left:0.1em;
+    top:0.3em;
+  }
+  .ul-list >li {
+    margin-right:1em;
+  }
+  .showcase {
+    margin-top:3.3em;
+    background-image:url(../images/park.jpg);
+    height:25em;
+    width:100%;
+    background-position:center center;
+    text-align:center;
+    color:#f4f4f4;
+    box-sizing:border-box;
+    position:relative;
+  }
+  .showcase >h1 {
+    position:relative;
+    top:2em;
+  }
+  .showcase >p {
+    position:relative;
+    top:6.5em;
+    font-size:110%;
+  }
+
+  .btnContainer {
+    width:30%;
+    height:20%;
+    border-radius: 5px;
+    display:inline-block;
+     color:#fff;
+     background: #000;
+     text-decoration: none;;
+     padding:1rem 2 rem;
+     border:1px #fff solid;
+     margin-top:40px;
+     font-size:20px;
+     animation-name:btn;
+     animation-duration: 3s;
+     animation-delay:3s;
+     animation-fill-mode: forwards;
+     transition-property: transform;
+     transition-duration: 1s;
+  }
+  .btnContainer:hover{
+      transform: rotateY(180deg);
+      background:#000;
+      color:#f4f3f3;
+      border-radius: 5px;
+
+  }
+
+  .main {
+    height:15em;
+    text-align:center;
+    position:relative;
+    top:2em;
+  }
+  #main-footer {
+  background:#000;
+  height:15em;
+  display:grid:
+  grid-template-columns:repeat(4,1fr);
+  color:#fff;
+  position:relative
+  }
+  #main-footer > h4 {
+    position:absolute;
+    top:-0.5em;
+  }
+  #main-footer > p {
+    position:absolute;
+    top:10em;
+    left:15em;
+  }
+  .footerdiv {
+    position:absolute;
+    top:0px;
+    right:3em;
+  }
+
+}
+@media(max-width:600px) {
+
+  #main-header {
+    background-color: #000;
+    color:#fff;
+    height: 5em;
+    position: fixed;
+    display:flex;
+    top:0.06em;
+    width:100%;
+    z-index:1;
+    box-sizing:border-box;
+  }
+
+}
