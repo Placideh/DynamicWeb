@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family:Arial,Helvetica,san-serif;
+  margin:0;
+  background-color:#f4f4f4;
+}
+.container {
+  margin:auto;
+  width: 80%;
+}
+.postBox {
+  border:1px solid #ccc;
+  margin-bottom: 1.4em;
+  position: relative;
+}
+.postBox >h3 {
+  text-align: center;
+}
+.postBox >p {
+  position: relative;
+  width: 80%;
+  left:10%;
+}

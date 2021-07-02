@@ -78,19 +78,31 @@ a:hover{
 }
 .users {
   background: #ddd;
-  /* display: flex; */
-  /* align-items: flex-start;  */
-}
-/* .userBtn{
-  background: #000;
-  color:#fff;
-  height: 1em;
+  line-height: 1.6em;
+  overflow: hidden;
   position: relative;
-  font-size: 12px;
+}
 
-} */
-.userBtn:hover{
+.userlist {
+  position: relative;
+  border:2px solid #ccc;
+  line-height: 1.2em;
+  height: 8em;
+  border-radius: 5px;
 
+}
+.userlist > p{
+border-bottom: 1px solid #f4f4f4;
+position: relative;
+left:2em;
+}
+.linkToPost {
+  background: #000;
+  color:#f4f4f4;
+  width: 1.4em;
+  height:0.5em;
+  position: relative;
+  left: 2em;
 }
 
 .btnContainer {

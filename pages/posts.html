@@ -4,13 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <base href="/">
+  <link rel="stylesheet" type="text/css" href="./css/posts.css">
   <title>Posts</title>
 </head>
 <body>
-  <h3>User Posts page</h3>
-  <div class="users"></div>
-  <script src="../js/main.js">
 
+  <div class="container">
+    <div class="user"></div>
+
+  </div>
+  <script >
+    const getUserId=window.location.search.split('id=')[1];
+
+    function getPosts(id){
+      fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
+      .then((response) => response.json())
+      .then(data =>{
+        let output='<h2>User Posts</h2>'
+        data.forEach(post=>{
+          output+=`
+            <div class="postBox">
+              <h3>${post.title}</h3>
+              <p>${post.body}</p>
+            </div><br>
+          `
+        })
+        document.querySelector('.user').innerHTML=output;
+      });
+    }
+    getPosts(getUserId);
   </script>
 </body>
 </html>
