@@ -297,5 +297,51 @@ position:relative
     z-index:1;
     box-sizing:border-box;
   }
+  .my-list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left:3em;
+  }
+  .showcase >h1 {
+    position:relative;
+    top:2em;
+  }
+  .showcase >p {
+    position:relative;
+    top:6.5em;
+    font-size:95%;
+  }
+  #main-footer > p {
+    position:absolute;
+    top:10em;
+    left:7em;
+  }
+  .btnContainer {
+    width:50%;
+    height:20%;
+    border-radius: 5px;
+    display:inline-block;
+     color:#fff;
+     background: #000;
+     text-decoration: none;;
+     padding:1rem 2 rem;
+     border:1px #fff solid;
+     margin-top:40px;
+     font-size:15px;
+     animation-name:btn;
+     animation-duration: 3s;
+     animation-delay:3s;
+     animation-fill-mode: forwards;
+     transition-property: transform;
+     transition-duration: 1s;
+  }
+  .btnContainer:hover{
+      transform: rotateY(180deg);
+      background:#000;
+      color:#f4f3f3;
+      border-radius: 5px;
+
+  }
 
 }
