@@ -1,0 +1,2 @@
+# DynamicWeb
+#Dynamic web With HTML|CSS|JAVASCRIPT USING JSONPLACEHOLDER
